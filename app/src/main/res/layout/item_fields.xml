@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/navigation_bg"
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp"
+    android:layout_marginHorizontal="8dp"
+    android:outlineAmbientShadowColor="@color/light_text_color"
+    android:outlineSpotShadowColor="@color/light_text_color"
+    tools:targetApi="p">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_field_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="7dp"
+            style="@style/ItemHeadingTextStyle"
+            android:text="Computer Science"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_field"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_field_name"
+            app:srcCompat="@drawable/ic_cs" />
+
+        <TextView
+            android:id="@+id/tv_question_count"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="question count"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/bnt_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_field" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bnt_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details"
+            style="@style/ButtonStyle"
+            app:cornerRadius="0dp"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginBottom="-6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

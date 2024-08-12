@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Stream Analysis\n for Carrier\n Aptitude Test</string>
+    <string name="home">Home</string>
+    <string name="quiz">Quiz</string>
+
+    <string name="profile">Profile</string>
+    <!--  TODO: Remove or change this placeholder text  -->
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="enter_your_credentials_to_continue">Enter your credentials to continue</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in</string>
+    <string name="set_password">Set Password</string>
+    <string name="create_your_password">Create your password</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="atleast_1_number_or_a_special_character">Atleast 1 number or a special character</string>
+    <string name="register">Register</string>
+    <string name="continuee">Continue</string>
+    <string name="select">Select</string>
+    <string name="login">Login</string>
+    <string name="login_to_your_existing_account">Login to your existing account</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account? Sign up</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="please_provide_your_email_and_a_reset_link_will_be_sent_to_you">Please provide your email, and a reset link will be sent to you</string>
+    <string name="get_started">Get Started</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="done">Done</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="submit">Submit</string>
+    <string name="education">Education</string>
+    <string name="logout">Logout</string>
+    <string name="result">Result</string>
+    <string name="suggested_fields">Suggested Fields</string>
+    <string name="view_details">View Details</string>
+    <string name="go_back">Go back</string>
+    <string name="save_result">Save Result</string>
+    <string name="records">Records</string>
+    <string name="search_categories">Search categories</string>
+    <string name="see_records">See Records</string>
+    <string name="career">Career</string>
+    <string name="choose_the_best_and_right_carrier_for_you_nby_testing_your_previous_ability_intellegence_and_knowledge">Choose the best and right Carrier for you.\nBy Testing your previous ability,intellegence and knowledge</string>
+    <string name="refresh">Refresh</string>
+</resources>

@@ -1,0 +1,174 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CarrierAptitudeTest" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="colorSecondaryContainer">@color/navigation_ripple_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="materialAlertDialogTheme">@style/CustomAlertDialog</item>
+
+    </style>
+
+    <style name="textStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="textStyleInactive" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <!--  Splash Screen Theme -->
+    <style name="SplashTheme" parent="Theme.CarrierAptitudeTest">
+        <item name="android:windowBackground">@color/purple_500</item>
+        <item name="android:statusBarColor">@color/purple_500</item>
+        <item name="android:navigationBarColor">@color/purple_500</item>
+    </style>
+    <!--  Onboarding Screen Theme -->
+    <!--  Button Style  -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/horizontal_margin_button</item>
+    </style>
+    <!--  Text Button Style  -->
+    <style name="TextButtonStyle" parent="Widget.Material3.Button.TextButton">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/horizontal_margin_button</item>
+    </style>
+    <!--  App Name &&  Splash style  -->
+    <style name="AppNameStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">0.10</item>
+        <item name="android:lineSpacingMultiplier">0.90</item>
+    </style>
+
+    <!-- Name Style -->
+    <style name="NameStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!--  Extra Normal Text Style   -->
+    <style name="NormalTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/light_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--   Normal Text Style   -->
+    <style name="ExtraNormalTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical|center</item>
+    </style>
+    <!--   Heading Text Style   -->
+    <style name="HeadingTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+    </style>
+    <!--   Fragment Heading Text Style   -->
+    <style name="FragmentHeadingTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+    </style>
+    <!--   Item Heading Text Style   -->
+    <style name="ItemHeadingTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical|center</item>
+    </style>
+    <!--   Edit Text Style   -->
+    <style name="EditTextStyle" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxStrokeColor">@color/purple_500</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+    </style>
+    <!--  ScrollView Style  -->
+    <style name="ScrollViewStyle">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+
+    <!--  AlertDialog Theme  -->
+
+    <style name="CustomAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorSecondary">@color/secondary_variant</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_color</item>
+        <item name="android:dialogCornerRadius" tools:targetApi="p">20dp</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/DialogTitleText</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/DialogBodyText</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>
+    </style>
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+    <style name="Widget.App.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="DialogTitleText" parent="MaterialAlertDialog.Material3.Title.Panel.CenterStacked">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="DialogBodyText" parent="MaterialAlertDialog.Material3.Body.Text.CenterStacked">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+
+
+</resources>

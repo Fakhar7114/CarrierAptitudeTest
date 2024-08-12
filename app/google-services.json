@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "776283302590",
+    "project_id": "carrieraptitudetest",
+    "storage_bucket": "carrieraptitudetest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776283302590:android:76dd23a840b42b0c3eccef",
+        "android_client_info": {
+          "package_name": "com.alphacoder.carrieraptitudetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0V_rFFLmZEVME3PgjPv3RS_G6Szu8kH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

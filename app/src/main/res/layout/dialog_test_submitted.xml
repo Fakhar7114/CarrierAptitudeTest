@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:padding="10dp"
+        android:gravity="center"
+        style="@style/HeadingTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_reward"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_achievment" />
+
+    <TextView
+        android:id="@+id/tv_reward_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/NormalTextStyle"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:text="Congratulations on completing the test! Your answers have been recorded. You can now review your results or return to the home screen. Keep up the great work!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_reward" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go_to_home"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Go to Home"
+        app:cornerRadius="0dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reward_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

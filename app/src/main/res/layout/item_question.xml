@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/navigation_bg"
+    app:strokeWidth="0dp"
+    android:outlineAmbientShadowColor="@color/navigation_ripple_color"
+    android:outlineSpotShadowColor="@color/navigation_ripple_color"
+    app:cardElevation="2dp"
+    android:layout_marginVertical="5dp"
+    tools:targetApi="p">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="0dp"
+            style="@style/ItemHeadingTextStyle"
+            android:layout_height="wrap_content"
+            android:text="Computer Science"
+            android:padding="10dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextStyle"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/text_color"
+            android:text="Which artist is known for creating the 'Mona Lisa'?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_question">
+
+            <RadioButton
+                android:id="@+id/option_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextStyle"
+                app:buttonTint="@color/radio_button_selector"
+
+                />
+            <RadioButton
+                android:id="@+id/option_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextStyle"
+                android:layout_marginTop="2dp"
+                app:buttonTint="@color/radio_button_selector"
+                />
+            <RadioButton
+                android:id="@+id/option_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextStyle"
+                android:layout_marginTop="2dp"
+                app:buttonTint="@color/radio_button_selector"
+                />
+            <RadioButton
+                android:id="@+id/option_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextStyle"
+                android:layout_marginTop="2dp"
+                app:buttonTint="@color/bottom_menu_selector"
+                />
+
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

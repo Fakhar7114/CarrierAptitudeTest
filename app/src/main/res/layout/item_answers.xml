@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/navigation_bg"
+    app:strokeWidth="0dp"
+    android:outlineAmbientShadowColor="@color/navigation_ripple_color"
+    android:outlineSpotShadowColor="@color/navigation_ripple_color"
+    app:cardElevation="2dp"
+    android:layout_marginVertical="5dp"
+    tools:targetApi="p">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_question"
+            style="@style/NormalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:text="Which artist is known for creating the 'Mona Lisa'?"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_question">
+
+            <RadioButton
+                android:id="@+id/option_a"
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:enabled="false"
+                app:buttonTint="@color/radio_button_selector"
+
+                />
+
+            <RadioButton
+                android:id="@+id/option_b"
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:clickable="false"
+                android:enabled="false"
+                app:buttonTint="@color/radio_button_selector" />
+
+            <RadioButton
+                android:id="@+id/option_c"
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:clickable="false"
+                android:enabled="false"
+                app:buttonTint="@color/radio_button_selector" />
+
+            <RadioButton
+                android:id="@+id/option_d"
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:clickable="false"
+                android:enabled="false"
+                app:buttonTint="@color/bottom_menu_selector" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_answer"
+            style="@style/ItemHeadingTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:layout_marginBottom="10dp"
+            android:text="SHA 256 Key"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
